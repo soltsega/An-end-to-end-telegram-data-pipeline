@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# DBT
+target/
+dbt_packages/
+logs/
+
+# Data
+data/raw/
+data/processed/
+
+# IDE
+.vscode/
+.idea/
+scraper_session.session

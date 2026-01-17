@@ -1,0 +1,12 @@
+medical_warehouse:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: "{{ env_var('DB_HOST', 'localhost') }}"
+      port: 5432
+      user: "{{ env_var('DB_USER', 'postgres') }}"
+      pass: "{{ env_var('DB_PASSWORD', 'postgres') }}"
+      dbname: "{{ env_var('DB_NAME', 'medical_db') }}"
+      schema: raw
+  target: dev
