@@ -17,3 +17,4 @@ data/processed/
 # IDE
 .vscode/
 .idea/
+scraper_session.session
