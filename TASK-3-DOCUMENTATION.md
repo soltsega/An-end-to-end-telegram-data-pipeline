@@ -53,4 +53,3 @@ A **dbt model** that creates a Fact table for image analytics.
 ## ⚠️ Known Limitations (Environment)
 The system is currently running Python **3.14**, which is not yet fully supported by the PyTorch ecosystem. As a result, the live `ultralytics` inference engine cannot run. The **Mock Implementation** ensures that the entire **Data Engineering Pipeline** (ETL flow, Database schemas, dbt models, and API endpoints) is fully implemented and verifiable, even without the ML inference model running locally.
 
-=================================================================
