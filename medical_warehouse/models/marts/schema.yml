@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_channels
+    description: "Dimension table for Telegram channels"
+    columns:
+      - name: channel_key
+        tests:
+          - unique
+          - not_null
+      - name: channel_name
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_messages
+    description: "Fact table for individual messages"
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+          # - unique (message_id might not be unique across channels globally without a composite key, but per channel yes)
+      - name: channel_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_channels')
+              field: channel_key
