@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_telegram_messages
+    description: "Staged and cleaned telegram messages"
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+      - name: channel_name
+        tests:
+          - not_null
+      - name: message_date
+        tests:
+          - not_null
