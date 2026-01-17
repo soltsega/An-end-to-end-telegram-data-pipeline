@@ -155,8 +155,8 @@ docker-compose run dbt test
 
 ```plaintext
 medical-telegram-warehouse/
+├── .github/              # GitHub Actions Workflows
 ├── api/                  # FastAPI Application
-├── dagster/              # Orchestration (Planned)
 ├── data/                 # Data Lake (Raw JSON/Images)
 ├── medical_warehouse/    # dbt Project (Transformation)
 ├── notebooks/            # EDA & Analysis
