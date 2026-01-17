@@ -165,4 +165,5 @@ medical-telegram-warehouse/
 ├── tests/                # Unit Tests
 ├── docker-compose.yml    # Infrastructure
 └── requirements.txt      # Python Dependencies
+pytest tests/test_scraper.py
 ```
