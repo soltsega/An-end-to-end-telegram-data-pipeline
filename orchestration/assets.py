@@ -1,3 +1,7 @@
+# This is the assets file for the Dagster pipeline
+# it is used to define the assets that will be used in the pipeline
+# it is also used to define the dependencies between the assets
+
 import os
 import sys
 from dagster import asset, Output, MetadataValue
