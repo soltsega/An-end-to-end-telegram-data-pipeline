@@ -37,6 +37,5 @@ services:
       - DB_PORT=${DB_PORT}
     profiles:
       - profiles.yml
-
 volumes:
   postgres_data:
