@@ -8,7 +8,9 @@ venv/
 # DBT
 target/
 dbt_packages/
-logs/
+# Telethon
+*.session
+*.session-journal
 
 # Data
 data/raw/
